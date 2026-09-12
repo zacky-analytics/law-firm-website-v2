@@ -1,3 +1,4 @@
+<img width="1349" height="624" alt="image" src="https://github.com/user-attachments/assets/b33e58f5-0345-4dae-b89b-cebe2b6182ec" />
 # Law Firm Website
 
 A professional, responsive website designed for a law firm to establish an online presence, build client trust, and make it easier for potential clients to learn about the firm's legal services and get in touch.
