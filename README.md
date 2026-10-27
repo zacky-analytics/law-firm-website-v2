@@ -1,81 +1,45 @@
-<img width="1349" height="624" alt="image" src="https://github.com/user-attachments/assets/b33e58f5-0345-4dae-b89b-cebe2b6182ec" />
-# Law Firm Website
+# Abdiwakil & Associates Advocates: Website
 
-A professional, responsive website designed for a law firm to establish an online presence, build client trust, and make it easier for potential clients to learn about the firm's legal services and get in touch.
+Website for a law firm in Upperhill, Nairobi. Plain HTML, CSS and JavaScript with no build step, deployed on Netlify.
 
-## Live Website
-
-[View Live Website](https://wakiliwebsite.netlify.app/)
-
-## Project Overview
-
-This project was developed as a practical web development project using a real-world law firm scenario.
-
-The goal was to create a clean, professional, and trustworthy website that could be used by a law firm to:
-
-- Present its legal services
-- Introduce its legal team
-- Build credibility with potential clients
-- Provide clear contact information
-- Encourage clients to make inquiries or consultations
-- Establish a professional online presence
+Live site: https://wakiliwebsite.netlify.app/
 
 ## Features
 
-- Professional landing page
-- Law firm introduction
-- Lawyer profile section
-- Legal services / practice areas
-- Professional imagery
-- Contact and consultation section
-- Responsive design
-- Mobile-friendly layout
-- Clear call-to-action sections
-- Professional navigation and page structure
+- Responsive layout with a mobile menu
+- Practice areas, firm profile, how-we-work steps and FAQ
+- Enquiry form (Formspree) with inline success and error messages, consent checkbox and spam honeypot
+- Tap-to-call, email and WhatsApp links with a pre-filled message, plus an embedded Google Map
+- SEO basics: meta description, Open Graph tags, `LegalService` structured data, sitemap and robots.txt
+- Accessibility: skip link, keyboard-friendly menu, visible focus states, reduced-motion support
+- Privacy Policy and Terms & Disclaimer pages, and a custom 404 page
+- Security headers and caching rules in `netlify.toml`
 
-## Technologies Used
+## Project structure
 
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Web Design
+```
+index.html        Main page
+privacy.html      Privacy policy (draft for the firm to review)
+terms.html        Terms and disclaimer (draft for the firm to review)
+404.html          Not-found page
+css/style.css     All styles
+js/main.js        Mobile menu and form handling
+images/           hero-lawyer.png, about-lawyer.jpg, office-consultation.jpg
+favicon.svg  robots.txt  sitemap.xml  netlify.toml
+```
 
-## Project Purpose
+## Before going live: checklist
 
-This project was created to strengthen my practical web development skills by designing and developing a website based on a real business use case.
+- [ ] Put the photos in `images/` (`hero-lawyer.png`, `about-lawyer.jpg`). Compress them or convert to WebP, keeping each under about 200 KB.
+- [ ] Add the advocate's year of admission, education and LSK details in the About section (see the TODO comment in `index.html`).
+- [ ] Replace the Gmail address with a firm-domain email once a domain is set up.
+- [ ] Connect a custom domain in Netlify, then update the URLs in `index.html`, `sitemap.xml`, `robots.txt` and the `canonical` tags.
+- [ ] Have the advocate review `privacy.html` and `terms.html`.
+- [ ] Add testimonials only if they are real, permitted by the client and compliant with Law Society of Kenya advertising rules.
+- [ ] Test the enquiry form end to end and check the Formspree inbox.
+- [ ] Claim a Google Business Profile for the firm's Upperhill address.
 
-Rather than building only tutorial projects, I wanted to practice creating a website that solves an actual business problem: helping a professional service firm establish credibility and attract potential clients online.
+## Notes
 
-## What I Practiced
-
-Through this project, I practiced:
-
-- Website structure and layout
-- Responsive web design
-- User interface design
-- Business-focused content presentation
-- Call-to-action placement
-- Image integration
-- Navigation design
-- Mobile responsiveness
-- Deploying a website online
-
-## Future Improvements
-
-Possible future improvements include:
-
-- Custom domain
-- Online consultation booking
-- WhatsApp integration
-- Google Maps integration
-- Client testimonials
-- Frequently Asked Questions (FAQ)
-- Legal articles and resources
-- Improved SEO
-- Contact form integration
-
-## Developer
-
-**Zak**
-
-Finance student with an IT background, interested in web development, data analytics, finance, and technology-driven business solutions.
+- The Content-Security-Policy in `netlify.toml` only allows Google Fonts, Google Maps and Formspree. If you add another third-party service (analytics, a chat widget), add it to the policy.
+- No JavaScript framework or build tools are needed. Open `index.html` in a browser, or deploy the folder as is.
