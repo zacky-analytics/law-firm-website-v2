@@ -1,45 +1,55 @@
-# Abdiwakil & Associates Advocates: Website
+# Abdiwakil & Associates Advocates: Law Firm Website
 
-Website for a law firm in Upperhill, Nairobi. Plain HTML, CSS and JavaScript with no build step, deployed on Netlify.
+A responsive, accessible website for a law firm in Upperhill, Nairobi, built with plain HTML, CSS and JavaScript. It helps potential clients understand the firm's services, trust the practice, and get in touch quickly by phone, WhatsApp or an enquiry form.
 
-Live site: https://wakiliwebsite.netlify.app/
+**Live site:** https://wakiliwebsite.netlify.app/
+
+![Website screenshot](screenshot.png)
 
 ## Features
 
-- Responsive layout with a mobile menu
-- Practice areas, firm profile, how-we-work steps and FAQ
-- Enquiry form (Formspree) with inline success and error messages, consent checkbox and spam honeypot
+- Mobile-first responsive layout with a hamburger menu
+- Practice areas, advocate profile, "how we work" steps and an FAQ
+- Enquiry form (Formspree) with inline validation, success and error messages, a consent checkbox and a spam honeypot
 - Tap-to-call, email and WhatsApp links with a pre-filled message, plus an embedded Google Map
-- SEO basics: meta description, Open Graph tags, `LegalService` structured data, sitemap and robots.txt
+- SEO: meta description, Open Graph tags, `LegalService` structured data, sitemap and robots.txt
 - Accessibility: skip link, keyboard-friendly menu, visible focus states, reduced-motion support
 - Privacy Policy and Terms & Disclaimer pages, and a custom 404 page
-- Security headers and caching rules in `netlify.toml`
+- Security headers and caching rules via `netlify.toml`
+
+## Tech stack
+
+HTML5, CSS3 (custom properties, grid, flexbox), vanilla JavaScript, Formspree, Netlify (continuous deployment from GitHub).
 
 ## Project structure
 
-```
-index.html        Main page
-privacy.html      Privacy policy (draft for the firm to review)
-terms.html        Terms and disclaimer (draft for the firm to review)
-404.html          Not-found page
-css/style.css     All styles
-js/main.js        Mobile menu and form handling
-images/           hero-lawyer.png, about-lawyer.jpg, office-consultation.jpg
-favicon.svg  robots.txt  sitemap.xml  netlify.toml
-```
+    index.html        Main page
+    privacy.html      Privacy policy
+    terms.html        Terms and disclaimer
+    404.html          Not-found page
+    css/style.css     All styles
+    js/main.js        Mobile menu and form handling
+    images/           Photos
+    netlify.toml      Headers and caching
 
-## Before going live: checklist
+## Run locally
 
-- [ ] Put the photos in `images/` (`hero-lawyer.png`, `about-lawyer.jpg`). Compress them or convert to WebP, keeping each under about 200 KB.
-- [ ] Add the advocate's year of admission, education and LSK details in the About section (see the TODO comment in `index.html`).
-- [ ] Replace the Gmail address with a firm-domain email once a domain is set up.
-- [ ] Connect a custom domain in Netlify, then update the URLs in `index.html`, `sitemap.xml`, `robots.txt` and the `canonical` tags.
-- [ ] Have the advocate review `privacy.html` and `terms.html`.
-- [ ] Add testimonials only if they are real, permitted by the client and compliant with Law Society of Kenya advertising rules.
-- [ ] Test the enquiry form end to end and check the Formspree inbox.
-- [ ] Claim a Google Business Profile for the firm's Upperhill address.
+No build step is needed. Open the folder in VS Code and use the Live Server extension on `index.html`, or open `index.html` directly in a browser.
 
-## Notes
+## What I practiced
 
-- The Content-Security-Policy in `netlify.toml` only allows Google Fonts, Google Maps and Formspree. If you add another third-party service (analytics, a chat widget), add it to the policy.
-- No JavaScript framework or build tools are needed. Open `index.html` in a browser, or deploy the folder as is.
+- Designing a trustworthy, conversion-focused page for a professional services business
+- Mobile navigation, form handling with `fetch`, and client-side validation
+- Accessibility, SEO and structured data
+- Security headers and deployment with Netlify and GitHub
+
+## Planned improvements
+
+- Custom domain and a firm email address
+- Online consultation booking
+- Legal articles and resources
+- Client testimonials, once permitted and compliant with Law Society of Kenya rules
+
+## Developer
+
+**Zak**: finance student with an IT background, interested in web development, data analytics and technology-driven business solutions.
